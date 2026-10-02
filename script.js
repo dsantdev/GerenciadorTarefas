@@ -1,14 +1,20 @@
 const form = document.getElementById("formtarefa");
-const selcategoria = document.getElementById("categoria");
-const selprioridade = document.getElementById("prioridade");
-const inputdata = document.getElementById("data");
-const descricao = document.getElementById("descricao")
+const inputDescricao = document.getElementById("descricao");
+const selCategoria = document.getElementById("categoria");
+const selPrioridade = document.getElementById("prioridade");
+const inputData = document.getElementById("data");
+const mensagemErro = document.getElementById("mensagem_erro");
+ 
+const filtroSituacao = document.getElementById("filtro_situacao");
+const filtroCategoria = document.getElementById("filtro_categoria");
+ 
+const spanTotal = document.getElementById("total");
+const spanPendentes = document.getElementById("pendentes");
+const spanConcluidas = document.getElementById("concluidas");
+ 
+const listaTarefas = document.getElementById("lista_tarefas");
 
-const filtrosit = document.getElementById("filtro_situacao");
-const filtrocat = document.getElementById("filtro_categoria");
-const listadetarefas = document.getElementById("lista_tarefas");
-
-const btnadicionar = document.getElementById("btnadicionar") 
-btnadicionar.addEventListener("click", function () {
-
-})
+let tarefas = [];
+function salvarTarefas () {
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
+}

@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cfdbce;
+    color: #242624;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    border-radius: 5px;
+
+}
+section {
+    background-color: #fcfcef;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 8px 14px;
+    margin-top: 12px;
+    margin-right: 6px;
+
+}
