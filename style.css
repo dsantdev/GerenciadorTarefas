@@ -1,25 +1,64 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #cfdbce;
-    color: #242624;
+    background-color: #f2f4f7;
+    color: #222;
     margin: 0;
     padding: 20px;
 }
 
 main {
-    border-radius: 5px;
-
+    max-width: 600px;
+    margin: 0 auto;
 }
+
 section {
-    background-color: #fcfcef;
+    background-color: #fff;
     padding: 16px;
     margin-bottom: 16px;
     border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
 }
 
 button {
     padding: 8px 14px;
     margin-top: 12px;
     margin-right: 6px;
+    cursor: pointer;
+}
 
+#mensagem_erro {
+    color: #c0392b;
+}
+
+.tarefa {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tarefa.concluida {
+    background-color: #eef7ee;
+    color: #777;
+}
+
+.tarefa.concluida .descricao {
+    text-decoration: line-through;
+}
+
+.descricao {
+    font-weight: bold;
 }
